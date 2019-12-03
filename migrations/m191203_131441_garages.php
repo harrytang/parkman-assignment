@@ -22,15 +22,13 @@ class m191203_131441_garages extends Migration
         $this->createTable('{{%garages}}', [
             'garage_id' => $this->primaryKey(),
             'name' => $this->string()->notNull(),
-
-            'hourly_price' => $this->decimal()->notNull(),
+            'hourly_price' => $this->float()->notNull(),
             'currency' => $this->string(3)->notNull(),
             'contact_email' => $this->string()->notNull(),
-            'country' => $this->string()->notNull(), // *
-            'point' => $this->string()->notNull(), // *
-
-            'owner_id' => $this->integer()->notNull(), // *
-            'garage_owner' => $this->string()->notNull(), // *
+            'country' => $this->string()->notNull(),
+            'point' => $this->string()->notNull(),
+            'owner_id' => $this->integer()->notNull(),
+            'garage_owner' => $this->string()->notNull(),
 
         ], $tableOptions);
 
