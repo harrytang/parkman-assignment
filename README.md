@@ -20,7 +20,7 @@ DIRECTORY STRUCTURE
 REQUIREMENTS
 ------------
 
-The minimum requirement by this application that your Web server supports PHP 7.1
+The minimum requirement by this application that your Web server supports PHP 7.1.
 
 
 INSTALLATION
@@ -74,7 +74,7 @@ Run `migration` for database schema creation
 
      docker-compose run api php yii migrate   
     
-You can then access the application through the following URL:
+You can then access the application through the following URL
 
     http://127.0.0.1:8000/garages
 
@@ -83,6 +83,9 @@ You can then access the application through the following URL:
 
 Usage
 -----
+
+Live demo: [http://parkman-assignment.harrytang.com/garages](http://parkman-assignment.harrytang.com/garages)
+
 List all garages
 ```
 GET /garages
